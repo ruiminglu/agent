@@ -74,7 +74,7 @@
       background: #fffaf0; border-radius: 14px; box-shadow: var(--shadow);
     }
     .callout strong { color: #6f4905; }
-    .summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
     .summary-card { padding: 22px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); }
     .summary-card .number { font: 800 38px/1 Georgia, serif; color: var(--green); }
     .summary-card p { margin: 8px 0 0; color: var(--muted); }
@@ -117,7 +117,7 @@
     .questions { counter-reset: qs; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0; list-style: none; }
     .questions li { position: relative; margin: 0; padding: 16px 16px 16px 54px; border: 1px solid var(--line); border-radius: 12px; background: white; }
     .questions li::before { counter-increment: qs; content: counter(qs); position: absolute; left: 15px; top: 15px; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--sage); color: var(--deep); font-weight: 850; }
-    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
     .step { background: var(--deep); color: white; padding: 20px; border-radius: 14px; }
     .step span { color: #bcd8ca; font-weight: 800; font-size: 12px; letter-spacing: .08em; }
     .step p { margin: 8px 0 0; color: #e1eee7; }
@@ -191,12 +191,13 @@
         </div>
       </div>
       <div class="callout">
-        <strong>最值得先约的三家：</strong> The Little School 最贴合“户外 + 好奇心 + 社交表达 + 约 1:7”；Bellevue Montessori School 在五天制、闭校日 childcare、年级延续和蒙氏理念上最均衡；Cedar Crest Academy Bellewood 的现做午餐、每天 60–80 分钟 recess 和 8:00–18:00 覆盖最方便双职工家庭，但课程相对结构化、幼儿师生比为 1:10。
+        <strong>最值得先约的四家：</strong> The Little School 最贴合“户外 + 好奇心 + 社交表达 + 约 1:7”；Bellevue Montessori School 在五天制、闭校日 childcare、年级延续和蒙氏理念上最均衡；St. Thomas School 的 1:7、午餐和 Preschool–8 很有竞争力，但每天 Chapel 必须能接受；Cedar Crest Academy Bellewood 的现做午餐、每天 60–80 分钟 recess 和 8:00–18:00 覆盖最方便双职工家庭。
       </div>
       <div class="summary-grid">
         <div class="summary-card"><div class="number">#1</div><h3>The Little School</h3><p>理念和幼儿师生比最匹配；12.5 英亩自然校园，Preschool–5 年级。</p></div>
         <div class="summary-card"><div class="number">#2</div><h3>Bellevue Montessori</h3><p>五天稳定作息、部分闭校日全天托管、2¾ 岁–6 年级；户外分钟数需确认。</p></div>
-        <div class="summary-card"><div class="number">#3</div><h3>Cedar Crest Bellewood</h3><p>后勤最省心：校内厨师、午餐包含、双 recess、托管至 18:00。</p></div>
+        <div class="summary-card"><div class="number">#3</div><h3>St. Thomas School†</h3><p>学校整体 1:7、午餐、延时和 Preschool–8；每天 Chapel 是关键取舍。</p></div>
+        <div class="summary-card"><div class="number">#4</div><h3>Cedar Crest Bellewood</h3><p>后勤最省心：校内厨师、午餐包含、双 recess、托管至 18:00。</p></div>
       </div>
     </section>
 
@@ -229,7 +230,17 @@
               <td class="score">90/100</td>
             </tr>
             <tr>
-              <td class="school-name"><span class="rank">3</span><a href="#cca">Cedar Crest Bellewood</a><br><small>Bellevue 98004</small></td>
+              <td class="school-name"><span class="rank">3</span><a href="#sts">St. Thomas School†</a><br><small>Medina 98039</small></td>
+              <td><span class="tag good">Preschool–8</span></td>
+              <td><span class="tag good">Enrichment 含午餐</span></td>
+              <td><span class="tag good">7:30–18:00</span><br><span class="tag warn">Full day 需加 Enrichment</span></td>
+              <td><span class="tag warn">设施强，分钟未量化</span></td>
+              <td><span class="tag good">学校整体 1:7</span></td>
+              <td>好奇心、child-driven discovery、SEL；每天 Chapel</td>
+              <td class="score">89†/100</td>
+            </tr>
+            <tr>
+              <td class="school-name"><span class="rank">4</span><a href="#cca">Cedar Crest Bellewood</a><br><small>Bellevue 98004</small></td>
               <td><span class="tag good">Preschool–5*</span></td>
               <td><span class="tag good">现做且含学费</span></td>
               <td><span class="tag good">8:00–18:00</span></td>
@@ -239,7 +250,7 @@
               <td class="score">87/100</td>
             </tr>
             <tr>
-              <td class="school-name"><span class="rank">4</span><a href="#eton">Eton School</a><br><small>Bellevue 98008</small></td>
+              <td class="school-name"><span class="rank">5</span><a href="#eton">Eton School</a><br><small>Bellevue 98008</small></td>
               <td><span class="tag good">3 岁–8</span></td>
               <td><span class="tag good">可订热午餐</span></td>
               <td><span class="tag good">7:45–18:00</span><br><span class="tag good">早退日可托管</span></td>
@@ -249,7 +260,7 @@
               <td class="score">79/100</td>
             </tr>
             <tr>
-              <td class="school-name"><span class="rank">5</span><a href="#mch">Montessori Children’s House</a><br><small>Redmond 98053</small></td>
+              <td class="school-name"><span class="rank">6</span><a href="#mch">Montessori Children’s House</a><br><small>Redmond 98053</small></td>
               <td><span class="tag good">婴儿–6</span></td>
               <td><span class="tag bad">官网未见供餐</span></td>
               <td><span class="tag good">至 18:00</span><br><span class="tag warn">周三 13:00 早退</span></td>
@@ -261,7 +272,7 @@
           </tbody>
         </table>
       </div>
-      <p class="section-note">* Cedar Crest 官网的 Bellewood 地点页/地点总览写到 5 年级，但 Quick Facts 与 2026–27 tuition 页仍写到 4 年级；申请前必须让 admissions 书面确认孩子这一届可连续读到几年级。</p>
+      <p class="section-note">† St. Thomas 官方定位为 independent、non-sectarian 且无现行 parochial affiliation，但由 Episcopal Church 创办并每天举行全校 Chapel；如果“非教会学校”意味着完全没有宗教传统，则应排除。<br>* Cedar Crest 官网的 Bellewood 地点页/地点总览写到 5 年级，但 Quick Facts 与 2026–27 tuition 页仍写到 4 年级；申请前必须让 admissions 书面确认孩子这一届可连续读到几年级。</p>
     </section>
 
     <section id="details" class="wrap">
@@ -299,8 +310,24 @@
           <div class="sources">官方来源：<a href="https://www.bellmontessori.com/primary" target="_blank" rel="noopener">Primary 理念与班级</a><a href="https://www.bellmontessori.com/activity-club" target="_blank" rel="noopener">延时与闭校日托管</a><a href="https://www.bellmontessori.com/lunch-program" target="_blank" rel="noopener">热午餐</a><a href="https://www.bellmontessori.com/tuition-fees" target="_blank" rel="noopener">五天制与费用</a></div>
         </article>
 
+        <article id="sts" class="school-card">
+          <div class="school-head"><div><h3>3. St. Thomas School†</h3><p>8300 NE 12th St, Medina, WA 98039 · 从 Kirkland 前往 Bellevue / Seattle 的通勤路线较友好</p></div><div class="score-badge"><b>89†</b><small>强匹配，有理念取舍</small></div></div>
+          <div class="verdict"><strong>判断：</strong>在师生比、午餐、年级连续性、延时托管和好奇心教育上都很强，值得参观；但它虽已独立且自称 non-sectarian，仍保留每天全校 Chapel，必须先判断是否符合你对“非教会学校”的定义。</div>
+          <div class="facts">
+            <div class="fact"><b>覆盖</b>3 岁 Preschool–8 年级</div>
+            <div class="fact"><b>学校整体比例</b>1:7；班级 16–20 人，幼儿目标班实际配置须确认</div>
+            <div class="fact"><b>时间</b>8:15–12:00；Enrichment 至 15:20；Extended Day 7:30–18:00</div>
+            <div class="fact"><b>2026–27 学费</b>5-Day Preschool $22,500；Enrichment / Extended Day 另计</div>
+          </div>
+          <div class="cols">
+            <div><strong>已核实优势</strong><ul><li>Early Learning Center 平衡 teacher-led instruction 与 child-driven discovery，强调提问、探索、动手学习、创造力和社交情绪发展。</li><li>Preschool 一路到 8 年级；学校公布整体 student/teacher ratio 为 7:1。</li><li>选 Afternoon Enrichment 的幼儿可获得校内厨师每日准备的午餐；Extended Day 对 Preschool–8 开放，最晚至 18:00。</li><li>Afternoon Extended Day 在户外进行到 16:15；校园有操场、球场、花园、bio-swale 和 outdoor classroom。</li></ul></div>
+            <div><strong>风险与追问</strong><ul><li>学校由 St. Thomas Episcopal Church 创办；目前无 parochial affiliation，但每天全校参加 Chapel，内容侧重反思、品格、领导表达与世界宗教。</li><li>Preschool 基础项目只到中午；完整工作日需要另报 12:00–15:20 Enrichment，再按需衔接 Extended Day。须确认每周五天下午名额和全年总费用。</li><li>官网 1:7 是全校比例，不是目标 Preschool 班的直接比例；户外设施充分，但普通幼儿日程未公开每天总分钟数。</li></ul></div>
+          </div>
+          <div class="sources">官方来源：<a href="https://www.stthomasschool.org/about/fast-facts" target="_blank" rel="noopener">年级、比例与校园</a><a href="https://www.stthomasschool.org/academics/early-learning-center" target="_blank" rel="noopener">ELC 理念</a><a href="https://www.stthomasschool.org/academics/early-learning-center/afternoon-enrichment" target="_blank" rel="noopener">Afternoon Enrichment</a><a href="https://www.stthomasschool.org/student-life/dining-program" target="_blank" rel="noopener">午餐</a><a href="https://www.stthomasschool.org/student-life/extended-day-falcons-ledge" target="_blank" rel="noopener">Extended Day</a><a href="https://www.stthomasschool.org/admissions/tuition-information" target="_blank" rel="noopener">2026–27 学费</a><a href="https://www.stthomasschool.org/" target="_blank" rel="noopener">Chapel 与学校隶属</a></div>
+        </article>
+
         <article id="cca" class="school-card">
-          <div class="school-head"><div><h3>3. Cedar Crest Academy — Bellewood</h3><p>2125 112th Ave NE, Bellevue, WA 98004 · 靠近 I‑405 / SR‑520 与 Hidden Valley Park</p></div><div class="score-badge"><b>87</b><small>后勤友好</small></div></div>
+          <div class="school-head"><div><h3>4. Cedar Crest Academy — Bellewood</h3><p>2125 112th Ave NE, Bellevue, WA 98004 · 靠近 I‑405 / SR‑520 与 Hidden Valley Park</p></div><div class="score-badge"><b>87</b><small>后勤友好</small></div></div>
           <div class="verdict"><strong>判断：</strong>最适合把“午餐 + 长时托管 + 每天明确一小时以上户外”视为硬条件的家庭；教育风格需要通过课堂观察判断是否对你们来说偏学术。</div>
           <div class="facts">
             <div class="fact"><b>覆盖</b>Preschool–5 年级（官网页面有冲突，须确认）</div>
@@ -316,7 +343,7 @@
         </article>
 
         <article id="eton" class="school-card">
-          <div class="school-head"><div><h3>4. Eton School</h3><p>2701 Bellevue-Redmond Rd, Bellevue, WA 98008 · 对 Kirkland → Bellevue/Redmond 通勤都较顺</p></div><div class="score-badge"><b>79</b><small>需核实两项</small></div></div>
+          <div class="school-head"><div><h3>5. Eton School</h3><p>2701 Bellevue-Redmond Rd, Bellevue, WA 98008 · 对 Kirkland → Bellevue/Redmond 通勤都较顺</p></div><div class="score-badge"><b>79</b><small>需核实两项</small></div></div>
           <div class="verdict"><strong>判断：</strong>理念和年级连续性非常好，但“每天至少 1 小时户外”和“1:10 以下”两项缺少官网硬数据，不能仅凭宣传页判定满足。</div>
           <div class="facts">
             <div class="fact"><b>覆盖</b>3 岁–8 年级</div>
@@ -332,7 +359,7 @@
         </article>
 
         <article id="mch" class="school-card">
-          <div class="school-head"><div><h3>5. Montessori Children’s House (MCH)</h3><p>5003 218th Ave NE, Redmond, WA 98053 · Union Hill，若工作在 Redmond 更顺路</p></div><div class="score-badge"><b>74</b><small>理念强、后勤有缺口</small></div></div>
+          <div class="school-head"><div><h3>6. Montessori Children’s House (MCH)</h3><p>5003 218th Ave NE, Redmond, WA 98053 · Union Hill，若工作在 Redmond 更顺路</p></div><div class="score-badge"><b>74</b><small>理念强、后勤有缺口</small></div></div>
           <div class="verdict"><strong>判断：</strong>自然校园、蒙氏与社交情绪理念很合适；但位置偏东、供餐未核实，且每周三 13:00 early release，需要购买 Extended Day 才能满足工作日照护。</div>
           <div class="facts">
             <div class="fact"><b>覆盖</b>6 周龄–6 年级</div>
@@ -350,7 +377,7 @@
     </section>
 
     <section id="watchlist" class="wrap">
-      <div class="section-title"><div><h2>有条件候选与排除项</h2><p class="section-note">这些学校可能有局部亮点，但至少一项硬条件明显不满足，暂不建议排在前五。</p></div></div>
+      <div class="section-title"><div><h2>其他有条件候选与排除项</h2><p class="section-note">这些学校可能有局部亮点，但至少一项硬条件明显不满足，暂不建议排在前六。</p></div></div>
       <div class="watchlist">
         <article class="watch"><h3>Sammamish Montessori School</h3><p><span class="tag good">平均 1:6</span><span class="tag good">好奇心/蒙氏</span><span class="tag warn">aftercare 仅至 16:30</span></p><p>Redmond 98052。官网称平均 1:6，Preschool/Kindergarten 后可衔接 Elementary；但 1–5 年级路径标注为 2027–28 新项目，午餐需自带，且延时只到 16:30。若 16:30 接送可行，可作为备选。</p><p><a href="https://sammamishmontessori.com/" target="_blank" rel="noopener">官网</a> · <a href="https://sammamishmontessori.com/resources/faq/" target="_blank" rel="noopener">FAQ</a></p></article>
         <article class="watch"><h3>Bellevue Children’s Academy</h3><p><span class="tag good">供餐</span><span class="tag good">托管至 18:00</span><span class="tag warn">仅到 4 年级</span></p><p>IB inquiry、社交与课后项目不错，但 BCA 本身目前只到 4 年级；之后要转同集团 Willows Preparatory。课程地图也显示较早的 phonics / sight words，可能比你希望的更学术化。</p><p><a href="https://www.bcacademy.com/learning-journey/early-years" target="_blank" rel="noopener">Early Years</a> · <a href="https://www.bcacademy.com/school-life/clubs-sports-opportunities" target="_blank" rel="noopener">Extended Care</a></p></article>
@@ -376,12 +403,13 @@
     </section>
 
     <section id="tour" class="wrap">
-      <div class="section-title"><div><h2>建议行动顺序</h2><p class="section-note">先用四次参观解决大部分不确定性，再决定是否值得开车去 Redmond 东侧看 MCH。</p></div></div>
+      <div class="section-title"><div><h2>建议行动顺序</h2><p class="section-note">先用五次参观解决大部分不确定性，再决定是否值得开车去 Redmond 东侧看 MCH。</p></div></div>
       <div class="steps">
         <div class="step"><span>STEP 01</span><h3>The Little School</h3><p>验证 Extended Day、假期 camp 与总预算；重点观察孩子是否真的频繁出户外。</p></div>
         <div class="step"><span>STEP 02</span><h3>Bellevue Montessori</h3><p>优先约 Rossano，确认班级实际 1:几、每日户外分钟数和闭校日完整清单。</p></div>
-        <div class="step"><span>STEP 03</span><h3>Cedar Crest Bellewood</h3><p>观察课堂自由度；书面确认 5 年级是否对你孩子这一届开放。</p></div>
-        <div class="step"><span>STEP 04</span><h3>Eton School</h3><p>只有在招生办能给出 ratio 与 ≥60 分钟户外证据时，才提升到前三。</p></div>
+        <div class="step"><span>STEP 03</span><h3>St. Thomas School</h3><p>先体验一次 Chapel，再核实 Preschool 班级配置、户外分钟和五天下午 Enrichment 总费用。</p></div>
+        <div class="step"><span>STEP 04</span><h3>Cedar Crest Bellewood</h3><p>观察课堂自由度；书面确认 5 年级是否对你孩子这一届开放。</p></div>
+        <div class="step"><span>STEP 05</span><h3>Eton School</h3><p>只有在招生办能给出 ratio 与 ≥60 分钟户外证据时，才提升到前三。</p></div>
       </div>
       <div class="callout" style="margin-top:18px"><strong>通勤下一步：</strong>你还没有提供家和办公室的大致路口/邮编，因此本报告没有伪造分钟数。拿到两个起点后，应分别在周二 8:00 和 17:15 用地图测量，避免周末或非高峰车程误导决策。</div>
     </section>
