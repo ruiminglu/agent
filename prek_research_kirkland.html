@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kirkland 家庭的 Bellevue–Redmond–Kirkland 私立 Pre-K 调研报告">
+  <title>Kirkland 私立 Pre-K 调研｜2027 入学</title>
+  <style>
+    :root {
+      --ink:#17332f; --muted:#5d706b; --paper:#fbfaf6; --card:#fff;
+      --mint:#e1f0e9; --green:#236a56; --deep:#16483b; --gold:#d59d38;
+      --line:#dce5df; --good:#187448; --warn:#97600a; --bad:#a14438;
+      --shadow:0 16px 46px rgba(24,63,51,.09);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:radial-gradient(circle at 8% 0%,rgba(213,157,56,.16),transparent 28rem),linear-gradient(180deg,#f4f7f2 0,var(--paper) 42rem);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.68}
+    a{color:var(--green);text-underline-offset:3px} a:hover{color:var(--deep)}
+    .wrap{width:min(1180px,calc(100% - 32px));margin-inline:auto}
+    header{padding:68px 0 40px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:12px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.eyebrow::before{content:"";width:28px;height:2px;background:var(--gold)}
+    h1{max-width:1050px;margin:14px 0;font-size:clamp(40px,7vw,72px);line-height:1.04;letter-spacing:-.045em} h2{margin:0;font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-.03em} h3{margin:0;font-size:21px;line-height:1.3}
+    .lead,.section-note{width:100%;margin:0;color:var(--muted)}.lead{font-size:clamp(17px,2vw,21px)}.section-note{margin-top:8px}
+    .meta,.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:23px}.pill{padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);font-size:13px}
+    button,.button{appearance:none;border:0;border-radius:10px;padding:11px 16px;background:var(--deep);color:#fff;font:inherit;font-weight:780;cursor:pointer;text-decoration:none}.button.secondary{border:1px solid var(--line);background:#fff;color:var(--deep)}
+    nav{position:sticky;top:0;z-index:10;border-block:1px solid rgba(35,106,86,.13);background:rgba(251,250,246,.92);backdrop-filter:blur(14px)}nav .wrap{display:flex;gap:22px;overflow:auto;padding-block:12px}nav a{white-space:nowrap;text-decoration:none;font-size:14px;font-weight:780}
+    section{padding:52px 0}.section-title{margin-bottom:22px}.context-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}.context-note{padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.76);color:var(--muted)}.context-note p{margin:0}.context-note strong{color:var(--deep)}
+    .callout{width:100%;padding:21px 24px;border:1px solid #e6d5aa;border-left:5px solid var(--gold);border-radius:14px;background:#fffaf0;box-shadow:var(--shadow)}.callout strong{color:#714905}
+    .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:18px}.summary-card{padding:21px;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--shadow)}.summary-card .number{font:800 36px/1 Georgia,serif;color:var(--green)}.summary-card p{margin:8px 0 0;color:var(--muted)}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}table{width:100%;min-width:1080px;border-collapse:collapse}th,td{padding:14px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}th{position:static;background:#ebf3ee;color:var(--deep);font-size:12px;letter-spacing:.03em;text-transform:uppercase}tbody tr:last-child td{border-bottom:0}tbody tr:hover{background:#fafcf9}.school-name{min-width:190px}.rank{display:inline-grid;width:27px;height:27px;margin-right:8px;place-items:center;border-radius:50%;background:var(--green);color:#fff;font-weight:850}.tag{display:inline-block;margin:2px 3px 2px 0;padding:3px 8px;border-radius:999px;font-size:12px;font-weight:780}.good{color:var(--good);background:#e7f5ec}.warn{color:var(--warn);background:#fff2d6}.bad{color:var(--bad);background:#fbe8e5}.unknown{color:#596574;background:#edf0f4}.score{font-size:19px;font-weight:850;color:var(--deep)}
+    .cards{display:grid;gap:18px}.school-card{padding:26px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow);scroll-margin-top:76px}.school-head p{margin:6px 0 0;color:var(--muted)}.verdict{margin:17px 0;padding:14px 16px;border-radius:11px;background:#f1f7f3}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.fact{padding:13px;border:1px solid #ebf0ec;border-radius:11px;background:#fafbf8}.fact b{display:block;margin-bottom:3px;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:19px}.cols p{margin:7px 0;color:var(--muted)}ul{margin:7px 0 0;padding-left:20px}li+li{margin-top:6px}.sources{margin-top:17px;padding-top:13px;border-top:1px dashed var(--line);color:var(--muted);font-size:13px}.sources a{margin-right:10px}
+    .watchlist,.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.watch,.time-card{padding:20px;border:1px solid var(--line);border-radius:15px;background:#fff}.watch p,.time-card p{margin:7px 0 0;color:var(--muted)}.time-card span{display:block;color:var(--green);font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+    .questions{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0;padding:0;counter-reset:q;list-style:none}.questions li{position:relative;margin:0;padding:15px 16px 15px 53px;border:1px solid var(--line);border-radius:12px;background:#fff}.questions li::before{position:absolute;top:14px;left:14px;display:grid;width:27px;height:27px;place-items:center;border-radius:50%;background:var(--mint);color:var(--deep);font-weight:850;counter-increment:q;content:counter(q)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:20px;border-radius:14px;background:var(--deep);color:#fff}.step span{color:#b9d9cc;font-size:12px;font-weight:850;letter-spacing:.08em}.step p{margin:8px 0 0;color:#e1eee8}.wide-note{width:100%;margin-top:18px;padding:19px 22px;border:1px solid #e6d5aa;border-left:5px solid var(--gold);border-radius:14px;background:#fffaf0}
+    footer{padding:34px 0 58px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    @media(max-width:850px){.summary-grid,.facts,.steps{grid-template-columns:repeat(2,1fr)}.context-grid,.cols,.watchlist,.timeline,.questions{grid-template-columns:1fr}}
+    @media(max-width:540px){header{padding-top:44px}.summary-grid,.facts,.steps{grid-template-columns:1fr}.section-title{display:block}}
+    @media print{body{background:#fff;font-size:11pt}.wrap{width:100%}nav,.toolbar{display:none}header,section{padding:22px 0}.school-card,.summary-card,.table-wrap,.callout{box-shadow:none;break-inside:avoid}.table-wrap{overflow:visible}table{min-width:0}th{position:static}a{color:inherit;text-decoration:none}.sources a::after{content:" (" attr(href) ")";font-size:8pt}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="eyebrow">Eastside Pre-K Shortlist</div>
+    <h1>Kirkland 家庭私立 Pre-K 调研</h1>
+    <p class="lead">沿用 Preschool 报告的十项要求，专门核实四岁阶段的年龄门槛、五天全日安排、午餐和延时托管、户外与师生比，以及 Pre-K 到 Kindergarten / 小学的连续性。</p>
+    <div class="meta">
+      <span class="pill">调研日期：2026-10-07</span><span class="pill">默认入学：Fall 2027</span>
+      <span class="pill">居住地：Kirkland, WA</span><span class="pill">范围：Bellevue / Redmond / Kirkland</span>
+    </div>
+    <div class="toolbar"><button onclick="window.print()">打印 / 存为 PDF</button><a class="button secondary" href="#plan">直接看申请顺序</a><a class="button secondary" href="preschool_research_kirkland.html">查看 Preschool 报告</a></div>
+  </header>
+
+  <nav aria-label="报告目录"><div class="wrap"><a href="#conclusion">结论</a><a href="#comparison">横向比较</a><a href="#details">学校详情</a><a href="#watchlist">备选</a><a href="#questions">参观问题</a><a href="#plan">申请计划</a></div></nav>
+
+  <main>
+    <section id="conclusion" class="wrap">
+      <div class="section-title"><h2>先说结论</h2></div>
+      <div class="context-grid">
+        <div class="context-note"><p><strong>Pre-K 不一定是独立班：</strong> The Little School 是 3–5 岁混龄 Early Childhood；Bellevue Montessori、Eton 和 MCH 也是 3–6 岁蒙氏混龄。St. Thomas 与 Cedar Crest 才更接近传统的独立 Pre-K 路径。</p></div>
+        <div class="context-note"><p><strong>“没有周中放假”的现实版本：</strong> 私校仍有法定假日、培训日和学期假。应比较的是闭校日 childcare、break camp、early-release 覆盖和是否保证名额，而不是寻找全年零闭校的学校。</p></div>
+      </div>
+      <div class="callout"><strong>优先约四家：</strong> The Little School 最贴合“好奇心、户外、社交表达、约 1:7”；Bellevue Montessori 的五天制和闭校日照护最透明，但无蒙氏经验的四岁新生名额有限；St. Thomas 有明确的四岁 Pre-K 路径、午餐和 PreK–8 连续性，但全日制要加 Afternoon Enrichment，而且每天 Chapel；Cedar Crest Bellewood 在午餐、60–80 分钟 recess 和 8:00–18:00 覆盖上最省心。</div>
+      <div class="summary-grid">
+        <div class="summary-card"><div class="number">#1</div><h3>The Little School</h3><p>价值观匹配度最高；混龄 Pre-K，五天全日，Preschool–5。</p></div>
+        <div class="summary-card"><div class="number">#2</div><h3>Bellevue Montessori</h3><p>照护覆盖与小学衔接强；四岁转入名额是最大不确定性。</p></div>
+        <div class="summary-card"><div class="number">#3</div><h3>St. Thomas School</h3><p>专门 Pre-K、整体 1:7、午餐；每日 Chapel 是硬性取舍。</p></div>
+        <div class="summary-card"><div class="number">#4</div><h3>Cedar Crest Bellewood</h3><p>双职工后勤最强；课程更结构化，班级比例为 1:10。</p></div>
+      </div>
+    </section>
+
+    <section id="comparison" class="wrap">
+      <div class="section-title"><h2>Pre-K 横向比较</h2><p class="section-note">综合分只衡量与你的条件匹配程度；“官网未披露”按待确认处理。通勤未计入实时路线，因为尚无家庭与办公室的精确地址。</p></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>学校</th><th>Pre-K 形态 / 门槛</th><th>小学延续</th><th>午餐</th><th>延时 / 闭校日</th><th>户外</th><th>比例</th><th>匹配分</th></tr></thead>
+        <tbody>
+          <tr><td class="school-name"><span class="rank">1</span><a href="#tls">The Little School</a><br><small>Bellevue 98004</small></td><td><span class="tag good">3–5 岁混龄</span><br>五天全日</td><td><span class="tag good">至 5 年级</span></td><td><span class="tag good">可订热午餐</span></td><td><span class="tag good">至 18:00</span><br><span class="tag warn">Break camp 另订</span></td><td><span class="tag good">每日 2–3+ 次</span></td><td><span class="tag good">约 1:6.5</span></td><td class="score">96/100</td></tr>
+          <tr><td class="school-name"><span class="rank">2</span><a href="#bms">Bellevue Montessori</a><br><small>Bellevue 98004</small></td><td><span class="tag good">2¾–6 岁混龄</span><br><span class="tag warn">四岁新生名额有限</span></td><td><span class="tag good">至 6 年级</span></td><td><span class="tag good">可订热午餐</span></td><td><span class="tag good">7:30–17:45</span><br><span class="tag good">部分闭校日开放</span></td><td><span class="tag warn">充足但未量化</span></td><td><span class="tag warn">通常 1:9–1:10</span></td><td class="score">91/100</td></tr>
+          <tr><td class="school-name"><span class="rank">3</span><a href="#sts">St. Thomas School</a><br><small>Medina 98039</small></td><td><span class="tag good">7/31 前满 4 岁</span><br>8:15–12 + 下午项目</td><td><span class="tag good">至 8 年级</span></td><td><span class="tag good">下午项目含午餐</span></td><td><span class="tag good">7:30–18:00</span></td><td><span class="tag warn">分钟数未公开</span></td><td><span class="tag good">学校整体 1:7</span></td><td class="score">89/100</td></tr>
+          <tr><td class="school-name"><span class="rank">4</span><a href="#cca">Cedar Crest Bellewood</a><br><small>Bellevue 98004</small></td><td><span class="tag good">独立 Pre-K 路径</span><br>五天全日</td><td><span class="tag good">官网称至 5 年级</span></td><td><span class="tag good">现做午餐含学费</span></td><td><span class="tag good">8:00–18:00</span></td><td><span class="tag good">60–80 分钟</span></td><td><span class="tag warn">1:10</span></td><td class="score">87/100</td></tr>
+          <tr><td class="school-name"><span class="rank">5</span><a href="#eton">Eton School</a><br><small>Bellevue 98008</small></td><td><span class="tag good">P4 / 蒙氏混龄</span><br><span class="tag unknown">截止年龄待确认</span></td><td><span class="tag good">至 8 年级</span></td><td><span class="tag good">可订热午餐</span></td><td><span class="tag good">7:45–18:00</span></td><td><span class="tag warn">已证实 30 分钟 recess</span></td><td><span class="tag unknown">官网未给数值</span></td><td class="score">79/100</td></tr>
+          <tr><td class="school-name"><span class="rank">6</span><a href="#mch">Montessori Children’s House</a><br><small>Redmond 98053</small></td><td><span class="tag good">3–6 岁混龄</span><br><span class="tag warn">需独立如厕</span></td><td><span class="tag good">主站称至 6 年级</span></td><td><span class="tag unknown">官网未见供餐说明</span></td><td><span class="tag good">8:00–18:00</span><br><span class="tag good">含 childcare-only days</span></td><td><span class="tag good">延时至少 100 分钟</span></td><td><span class="tag unknown">官网未给数值</span></td><td class="score">74/100</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="details" class="wrap">
+      <div class="section-title"><h2>学校详情与 Pre-K 风险点</h2><p class="section-note">分数相近时，优先看孩子是否喜欢课堂、老师是否会倾听，以及日历和延时合同能否真正覆盖你们的工作日。</p></div>
+      <div class="cards">
+        <article class="school-card" id="tls">
+          <div class="school-head"><h3>1. The Little School</h3><p>1221 124th Ave NE, Bellevue, WA 98005</p></div>
+          <div class="verdict"><strong>最符合整体画像。</strong> Pre-K 融入 3–5 岁混龄 Early Childhood，而非单独“冲 Kindergarten”班；对好奇心、表达、友谊与户外体验的强调最接近你的教育偏好。</div>
+          <div class="facts"><div class="fact"><b>时间</b>8:15–15:00；Extended Day 至 18:00</div><div class="fact"><b>比例</b>13 名孩子 + 2 名成人，约 1:6.5</div><div class="fact"><b>户外</b>12.5 英亩；每天 2–3 次以上</div><div class="fact"><b>延续</b>Preschool–5 年级</div></div>
+          <div class="cols"><div><strong>为什么适合</strong><ul><li>项目制、游戏与自然探索，不以提前刷学术为中心。</li><li>Second Step SEL、合作游戏和口语表达都被明确写入幼儿项目。</li><li>可选 Rainbow Fresh 热午餐；五天全日作息清晰。</li></ul></div><div><strong>申请时确认</strong><ul><li>Fall 2027 PreK 申请截止与放榜日；官网当前显示 2027 年 2 月中旬为关键节点。</li><li>Break camp 覆盖哪些假期、是否另收费、报名是否保证名额。</li><li>孩子从混龄班升入 Kindergarten 时的分班与留校率。</li></ul></div></div>
+          <div class="sources">官网：<a href="https://www.thelittleschool.org/program/early-childhood">Early Childhood</a><a href="https://www.tour.thelittleschool.org/">Virtual tour / facts</a><a href="https://www.thelittleschool.org/admissions/how-to-apply">How to apply</a></div>
+        </article>
+
+        <article class="school-card" id="bms">
+          <div class="school-head"><h3>2. Bellevue Montessori School</h3><p>11033 NE 24th St, Bellevue, WA 98004（Rossano campus）</p></div>
+          <div class="verdict"><strong>运营最稳，但要立刻问名额。</strong> Primary 是 2¾–6 岁混龄，官网明确说没有蒙氏经验的四岁孩子名额有限；如果孩子届时已四岁，这比学费和通勤更可能成为硬门槛。</div>
+          <div class="facts"><div class="fact"><b>时间</b>8:30–14:45；Activity Club 7:30–17:45</div><div class="fact"><b>比例</b>通常 1:9 或 1:10</div><div class="fact"><b>午餐</b>可订 Rainbow Fresh，也可自带</div><div class="fact"><b>门槛</b>需独立如厕；K 为 8/31 前满 5 岁</div></div>
+          <div class="cols"><div><strong>为什么适合</strong><ul><li>自主选择、按个人节奏、尊重与沟通，理念上强调“academics without pressure”。</li><li>同一学校可从 Primary 连续到 6 年级。</li><li>已签 full-day care 的家庭在家长会、教师培训、mid-winter 与 spring break 可获得部分全天照护。</li></ul></div><div><strong>申请时确认</strong><ul><li>Fall 2027 四岁、零蒙氏经验学生还剩多少位置。</li><li>每天真实户外分钟数，能否稳定达到 60 分钟。</li><li>Activity Club 和闭校日 care 是否必须整年签约、是否另有容量限制。</li></ul></div></div>
+          <div class="sources">官网：<a href="https://www.bellmontessori.com/primary-admission">Primary admission</a><a href="https://www.bellmontessori.com/primary">Primary program</a><a href="https://www.bellmontessori.com/admission-faq">Admissions FAQ</a><a href="https://www.bellmontessori.com/tuition-fees">Tuition &amp; care</a></div>
+        </article>
+
+        <article class="school-card" id="sts">
+          <div class="school-head"><h3>3. St. Thomas School</h3><p>8300 NE 12th St, Medina, WA 98039</p></div>
+          <div class="verdict"><strong>很强的专门 Pre-K，但宗教形式需家庭认同。</strong> 学校是独立私校、无教区隶属；同时由 Episcopal Church 创办且每天 Chapel。它不等同于教会附属学校，但对“非宗教”的严格解释可能仍不合格。</div>
+          <div class="facts"><div class="fact"><b>年龄</b>入学当年 7 月 31 日前满 4 岁</div><div class="fact"><b>时间</b>Pre-K 8:15–12；Enrichment 至 15:20</div><div class="fact"><b>午餐</b>参加下午 Enrichment 才包含</div><div class="fact"><b>延续</b>Pre-K–8；整体师生比 1:7</div></div>
+          <div class="cols"><div><strong>为什么适合</strong><ul><li>从儿童兴趣出发，强调 purposeful exploration、社交情绪能力和表达。</li><li>下午项目可选五天，配校内厨房午餐；前后延时合计约 7:30–18:00。</li><li>可一直读到 8 年级，减少转学压力。</li></ul></div><div><strong>必须接受 / 确认</strong><ul><li>每天 Chapel 是否与家庭对“非教会学校”的要求冲突。</li><li>Pre-K 常规课堂到底有多少户外时间；Falcon’s Ledge 的户外不能替代白天课程数据。</li><li>Afternoon Enrichment 五天名额、费用，以及它是否在所有上课日开放。</li></ul></div></div>
+          <div class="sources">官网：<a href="https://www.stthomasschool.org/academics/early-learning-center/prekindergarten">Prekindergarten</a><a href="https://www.stthomasschool.org/academics/early-learning-center/afternoon-enrichment">Afternoon Enrichment</a><a href="https://www.stthomasschool.org/student-life/extended-day-falcons-ledge">Extended Day</a><a href="https://www.stthomasschool.org/about/fast-facts">Fast facts</a></div>
+        </article>
+
+        <article class="school-card" id="cca">
+          <div class="school-head"><h3>4. Cedar Crest Academy — Bellewood</h3><p>2125 112th Ave NE, Bellevue, WA 98004</p></div>
+          <div class="verdict"><strong>双职工家庭最省心。</strong> 五天全日、校内现做午餐、每天两次 30–40 分钟 recess、早晚托管都公开得很清楚；主要取舍是 1:10 刚好压线，且课程相对更结构化。</div>
+          <div class="facts"><div class="fact"><b>时间</b>9:00–16:00；before 8:00–9:00；after 16:00–18:00</div><div class="fact"><b>比例</b>Pre-Primary 1:10</div><div class="fact"><b>户外</b>两次 recess，共 60–80 分钟</div><div class="fact"><b>午餐</b>校内厨师现做，午餐与 snack 包含</div></div>
+          <div class="cols"><div><strong>为什么适合</strong><ul><li>官网把 social-emotional、creative 和 developmentally appropriate learning 列为重点。</li><li>Bellewood 靠近 520 / I-405，Kirkland 通勤通常比 Redmond 东侧更容易。</li><li>校区页显示 Preschool–5，可覆盖小学阶段。</li></ul></div><div><strong>申请时确认</strong><ul><li>Pre-K 的年龄截止、toilet independence 和班级实际人数。</li><li>教师培训日、寒假、mid-winter / spring break 是否有 camp。</li><li>官网不同页面曾出现年级终点表述差异，合同中确认 Bellewood 是否确实到 5 年级。</li></ul></div></div>
+          <div class="sources">官网：<a href="https://www.cedarcrestacademy.org/about-us/quick-facts">Quick facts</a><a href="https://www.cedarcrestacademy.org/about-us/locations/bellewood">Bellewood campus</a><a href="https://www.cedarcrestacademy.org/admissions/tuition">Tuition</a></div>
+        </article>
+
+        <article class="school-card" id="eton">
+          <div class="school-head"><h3>5. Eton School</h3><p>2701 Bellevue-Redmond Rd, Bellevue, WA 98008</p></div>
+          <div class="verdict"><strong>长期衔接很好，关键数据不够透明。</strong> 年龄 3 岁到 8 年级的蒙氏学校，P3 / P4 / Kindergarten 连续；好奇心、个人节奏与 whole-child 理念匹配，但比例和一小时户外需要学校书面回答。</div>
+          <div class="facts"><div class="fact"><b>时间</b>Clubhouse 7:45–18:00</div><div class="fact"><b>午餐</b>可订 Rainbow Fresh 或自带</div><div class="fact"><b>户外</b>公开课表可证实 30 分钟 recess</div><div class="fact"><b>申请</b>P3–K 家庭面谈与学生评估</div></div>
+          <div class="cols"><div><strong>为什么适合</strong><ul><li>蒙氏自主工作与混龄社群有利于独立性、表达和社交学习。</li><li>同校到 8 年级，且 early-dismissal day 有 Clubhouse 覆盖。</li></ul></div><div><strong>申请时确认</strong><ul><li>P4 的生日截止、如厕要求和班级成人配置。</li><li>除 30 分钟 recess 外，是否还有固定户外课，合计能否达到 60 分钟。</li><li>所有 teacher workday 和 break 的托管清单。</li></ul></div></div>
+          <div class="sources">官网：<a href="https://www.etonschool.org/admissions/how-to-apply">How to apply</a><a href="https://www.etonschool.org/student-life">Student life</a><a href="https://www.etonschool.org/">Program overview</a></div>
+        </article>
+
+        <article class="school-card" id="mch">
+          <div class="school-head"><h3>6. Montessori Children’s House</h3><p>5003 218th Ave NE, Redmond, WA 98053</p></div>
+          <div class="verdict"><strong>户外与闭校日照护亮眼，但位置较远。</strong> Early Childhood 是 3–6 岁混龄；全日 Extended Day 合同含 Wednesday care 和 childcare-only days。对 Redmond 东侧通勤才更有吸引力。</div>
+          <div class="facts"><div class="fact"><b>时间</b>常规 9:00–15:30；Extended Day 8:00–18:00</div><div class="fact"><b>户外</b>延时项目明确至少 8:00–8:40、15:30–16:30</div><div class="fact"><b>门槛</b>现有 handbook 表示需独立如厕</div><div class="fact"><b>延续</b>学校主站写到 6 年级</div></div>
+          <div class="cols"><div><strong>为什么适合</strong><ul><li>强调自主、positive discipline、社区责任和冲突解决。</li><li>延时照护合同对 Wednesday early release 和 childcare-only days 交代较清楚。</li></ul></div><div><strong>申请时确认</strong><ul><li>是否提供午餐；公开网页未找到可靠的现行供餐说明。</li><li>Early Childhood 实际比例和常规课堂户外分钟数。</li><li>官网不同招生页面对最高年级表述不完全一致，签约前确认连续性。</li></ul></div></div>
+          <div class="sources">官网：<a href="https://www.mchkids.com/early-childhood">Early Childhood</a><a href="https://www.mchkids.com/tuition-fees-calendar">Tuition &amp; calendar</a><a href="https://www.mchkids.com/">School overview</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="watchlist" class="wrap">
+      <div class="section-title"><h2>值得看，但不完全满足连续性</h2><p class="section-note">这些学校可能很适合 Pre-K 本身，但与你“至少读完小学”的条件有明显缺口或新项目风险。</p></div>
+      <div class="watchlist">
+        <article class="watch"><h3>Avocado Montessori Academy</h3><p>Kirkland 本地、Primary 3–6 岁，8:30–16:00、延时至 17:30，餐点与 snack 包含；课程强调好奇心、沟通与 conflict resolution。硬伤是目前只到 6 岁，没有小学。另需确认 Primary 比例与每天户外分钟数。</p><p><a href="https://avocado-montessori.com/faq">FAQ</a> · <a href="https://avocado-montessori.com/primary-1">Primary program</a></p></article>
+        <article class="watch"><h3>Sammamish Montessori School</h3><p>Redmond，Primary 平均约 1:6，理念高度匹配；但午餐需自带、after-school 只到 16:30。小学 1–5 年级计划于 2027–28 新开，连续性尚未经实际验证。</p><p><a href="https://sammamishmontessori.com/">Program overview</a> · <a href="https://sammamishmontessori.com/resources/faq/">FAQ</a></p></article>
+        <article class="watch"><h3>Bellevue Children’s Academy</h3><p>有 Pre-K、7:30 morning care、after-school 至 18:00、午餐可带或购买，IB inquiry 理念不错；但现校只到 4 年级，之后要转入同集团 Willows Prep，且公开课表里的户外时间偏短、课程更学术化。</p><p><a href="https://www.bcacademy.com/learning-journey/early-years">Early Years</a> · <a href="https://www.bcacademy.com/school-life/clubs-sports-opportunities">Care</a></p></article>
+        <article class="watch"><h3>International Friends School</h3><p>Pre-K 有中英双语和探究学习优势，但目前只延续到 3 年级；学校价值观来自 Quaker tradition。若“非宗教”和小学完整连续性都是硬条件，不应进入首轮。</p><p><a href="https://www.ifschool.org/">School overview</a></p></article>
+      </div>
+    </section>
+
+    <section id="questions" class="wrap">
+      <div class="section-title"><h2>参观时必须拿到的十个答案</h2><p class="section-note">最好让 admissions 用邮件回答，避免把口头宣传当成合同承诺。</p></div>
+      <ol class="questions">
+        <li>孩子按生日会进入 Pre-K、混龄 Primary，还是 Kindergarten？年龄截止是哪一天？</li>
+        <li>四岁首次入学、没有蒙氏经验是否降低录取机会？当前还有多少名额？</li>
+        <li>Pre-K 是否要求完全独立如厕？偶发 accident 如何处理？</li>
+        <li>班级实际孩子数、lead / assistant 配置，以及午休或延时后的比例分别是多少？</li>
+        <li>每天在户外的固定分钟数是多少？雨天、空气质量不佳时如何替代？</li>
+        <li>午餐是学费包含、另购还是自带？过敏原和挑食如何管理？</li>
+        <li>请给出全年闭校日清单，并标明哪些日期有保证名额的 childcare / camp。</li>
+        <li>Extended Day 是按年签、按天买还是先到先得？最晚接走时间和 late fee 是什么？</li>
+        <li>每天有多少 child-led play、open-ended project 和 circle discussion？如何培养表达和冲突解决？</li>
+        <li>Pre-K 孩子升 Kindergarten / 小学的留校率、重新申请要求和优先权是什么？</li>
+      </ol>
+    </section>
+
+    <section id="plan" class="wrap">
+      <div class="section-title"><h2>建议申请顺序</h2><p class="section-note">先消除名额、宗教和全日制三个硬风险，再比较课堂气质与通勤。</p></div>
+      <div class="steps">
+        <div class="step"><span>STEP 01</span><h3>The Little School</h3><p>先约 tour，确认 Fall 2027 Pre-K 截止日、Extended Day 和 break camp 总预算。</p></div>
+        <div class="step"><span>STEP 02</span><h3>Bellevue Montessori</h3><p>马上问四岁零蒙氏经验是否仍有位置；若无，后续比较可直接省掉。</p></div>
+        <div class="step"><span>STEP 03</span><h3>St. Thomas</h3><p>先决定能否接受 daily Chapel，再核算五天 Afternoon Enrichment 和延时。</p></div>
+        <div class="step"><span>STEP 04</span><h3>Cedar Crest</h3><p>观察孩子能否适应更结构化的课堂，并索取全年 camp / closure 日历。</p></div>
+      </div>
+      <div class="wide-note"><strong>第二梯队：</strong> Eton 值得 tour，但在拿到比例和 ≥60 分钟户外的书面答案前不要排进前三；MCH 只有在 Redmond 东侧顺路时才值得承担通勤。Avocado 很适合把“Pre-K 体验”单独优化，但因为没有小学，不满足你的长期连续性要求。</div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-title"><h2>调研说明</h2></div>
+      <p class="section-note">本报告优先使用学校官网在 2026-10-07 可见的信息。评分中，“官网未披露”不等于“不满足”，但在 4 岁儿童的照护选择上，不应把营销语言当作可验证承诺。学费、名额、日历、教师配置和项目开放年级均可能变化；最终以招生办公室的书面答复、enrollment agreement 和当年 school calendar 为准。“非宗教”的判断依据是学校公开的机构身份和日常项目；St. Thomas 虽为独立学校，daily Chapel 仍应由家庭自行判断是否接受。</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Kirkland / Eastside 私立 Pre-K 调研 · 仅供家庭择校初筛，不替代实地参观、州政府 childcare licensing 记录与合同审阅。</div></footer>
+</body>
+</html>
